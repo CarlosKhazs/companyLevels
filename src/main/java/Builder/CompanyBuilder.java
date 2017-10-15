@@ -21,7 +21,7 @@ public class CompanyBuilder {
         return this;
     }
 
-    public CompanyBuilder theMostIncomeComesFrom(String incomeType) {
+    public CompanyBuilder andTheMostIncomeComesFrom(String incomeType) {
         company.setIncomeType(incomeType);
         return this;
     }

@@ -22,7 +22,7 @@ public class CompanyStateFactory {
     public static CompanyState getState(int employeesNumber) {
         observers.clear();
 
-        if (employeesNumber > 500) {
+        if (employeesNumber >= 490) {
             Observer observerStaff = new Staff();
             Observer observerEntireCompany = new EntireCompany();
             Observer observerCommunicationMedia = new CommunicationMedia();
@@ -33,7 +33,7 @@ public class CompanyStateFactory {
 
             callNotifiers();
             return new Multinational();
-        } else if (employeesNumber > 89 && employeesNumber < 489) {
+        } else if (employeesNumber > 89 && employeesNumber < 490) {
             Observer observerStaff = new Staff();
             Observer observerEntireCompany = new EntireCompany();
 

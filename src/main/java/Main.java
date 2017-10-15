@@ -9,7 +9,7 @@ public class Main {
 
         companyBuilder.withTradeMark("Bawi")
                       .hasAEmployeesNumberOf(15)
-                      .theMostIncomeComesFrom("")
+                      .andTheMostIncomeComesFrom("")
                       .build();
 
         System.out.println("---------------------------------------------");
@@ -28,7 +28,7 @@ public class Main {
 
         companyBuilder1.withTradeMark("UNIPAM")
                        .hasAEmployeesNumberOf(1000)
-                       .theMostIncomeComesFrom("investments")
+                       .andTheMostIncomeComesFrom("investments")
                        .build();
 
         System.out.println("---------------------------------------------");
