@@ -47,8 +47,18 @@ When a company is on a state called:
 
 The _Strategy_ comes like an attribute of the company settled in the _Builder_.
 
-When a company has a Stratey:
+When a company has its most income coming from:
 - _Announce_, its most income is from the announcement of its trademark.
 - _Invest_, its most income is from the investments of the company.
+
+### Advantages
+
+Both the _State_ and the _Strategy_ patterns are running through an **Abstract Factory**.
+With this one it's possible to manage the actions of a company in a flawless way, keeping a clean and flexible code, whether a change would be necessary.
+
+The _Observer_ makes it easier to add any kind of listener when it's needed to notify about a company's growth.
+
+In addition, the _Builder_ shows up its most incredible features when used side by side with the _Fluent Design_ technique, which is awesome to make the code more understandable when reading.
+
 
 All the project is based on a kind of study of cases to use some Object-oriented Patterns.
