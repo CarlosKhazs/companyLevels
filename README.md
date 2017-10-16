@@ -53,7 +53,7 @@ When a company has its most income coming from:
 
 ### Advantages
 
-Both the _State_ and the _Strategy_ patterns are running through an **Abstract Factory**.
+Both the _State_ and the _Strategy_ patterns are running through a **Factory Method**.
 With this one it's possible to manage the actions of a company in a flawless way, keeping a clean and flexible code, whether a change would be necessary.
 
 The _Observer_ makes it easier to add any kind of listener when it's needed to notify about a company's growth.
