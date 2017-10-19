@@ -1,11 +1,20 @@
 package States;
 
+import Observers.*;
+
 /**
  * Created by carlos on 12/10/17.
  */
-public class Enterprise implements CompanyState {
+public class Enterprise extends ObserverEntity implements CompanyState {
 
     public Enterprise() {
+        Observer observerStaff = new Staff();
+        Observer observerEntireCompany = new EntireCompany();
+
+        addObserver(observerStaff);
+        addObserver(observerEntireCompany);
+
+        callNotifiers();
         System.out.println("< The company goes into ENTERPRISE level >");
     }
 

@@ -1,11 +1,18 @@
 package States;
 
+import Observers.*;
+
 /**
  * Created by carlos on 12/10/17.
  */
-public class Startup implements CompanyState {
+public class Startup extends ObserverEntity implements CompanyState {
 
     public Startup() {
+        Observer observerStaff = new Staff();
+
+        addObserver(observerStaff);
+
+        callNotifiers();
         System.out.println("< The company is still a STARTUP level >");
     }
 

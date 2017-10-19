@@ -7,4 +7,5 @@ public interface CompanyState {
     void doSupportContact();
     void doCompanyAudit();
     void payBills();
+
 }
