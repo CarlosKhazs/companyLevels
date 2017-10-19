@@ -6,7 +6,7 @@ package Builder;
 public class CompanyBuilder {
     private Company company;
 
-    public CompanyBuilder buildCompany() {
+    public CompanyBuilder createCompany() {
         company = new Company();
         return this;
     }

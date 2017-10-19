@@ -5,7 +5,7 @@ import Builder.CompanyBuilder;
  */
 public class Main {
     public static void main(String[] args) {
-        CompanyBuilder companyBuilder = new CompanyBuilder().buildCompany();
+        CompanyBuilder companyBuilder = new CompanyBuilder().createCompany();
 
         companyBuilder.withTradeMark("Bawi")
                       .hasAEmployeesNumberOf(15)
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("---------------------------------------------");
         System.out.println("---------------------------------------------");
 
-        CompanyBuilder companyBuilder1 = new CompanyBuilder().buildCompany();
+        CompanyBuilder companyBuilder1 = new CompanyBuilder().createCompany();
 
         companyBuilder1.withTradeMark("UNIPAM")
                        .hasAEmployeesNumberOf(1000)
